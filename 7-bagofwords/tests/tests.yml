@@ -1,0 +1,31 @@
+---
+problem: Indent
+suites:
+- name: Base Case
+  pts: 15
+  type: output
+  tests:
+  - name: "Hello World"
+    command:
+    - "./mysolution"
+    - "../data/hello.txt"
+    solution: "hello -- 1\nworld -- 1\n"
+  - name: "Sorted Alphabetically?"
+    command:
+    - "./mysolution"
+    - "../data/alphabet.txt"
+    solution: "a -- 1\nb -- 1\nc -- 1\nx -- 1\ny -- 1\nz -- 1\n"
+  - name: "Doubles"
+    command:
+    - "./mysolution"
+    - "../data/double.txt"
+    solution: "double -- 2\ntrouble -- 2\n"
+- name: Stress Case
+  pts: 15
+  type: output
+  tests:
+  - name: "Romeo & Juliet (abridged)"
+    command:
+    - "./mysolution"
+    - "../data/romeoandjulietshort.txt"
+    solution: "a -- 2\nand -- 3\nbe -- 1\nbrings -- 1\nexeunt -- 1\nfor -- 2\nglooming -- 1\ngo -- 1\nhave -- 1\nhead -- 1\nhence -- 1\nher -- 1\nhis -- 1\nit -- 1\njuliet -- 2\nmore -- 2\nmorning -- 1\nnever -- 1\nnot -- 1\nof -- 4\npardon\xe2\x80\x99d -- 1\npeace -- 1\nprince -- 1\npunished -- 1\nromeo -- 2\nsad -- 1\nshall -- 1\nshow -- 1\nsome -- 2\nsorrow -- 1\nstory -- 1\nsun -- 1\ntalk -- 1\nthan -- 1\nthe -- 2\nthese -- 1\nthings -- 1\nthis -- 2\nto -- 1\ntragedy -- 1\nwas -- 1\nwill -- 1\nwith -- 1\nwoe -- 1\n"

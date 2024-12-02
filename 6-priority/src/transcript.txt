@@ -1,0 +1,102 @@
+3 Review project report
+2 Update resume
+4 Submit tax forms
+1 Pay bills
+3 Call John for updates
+4 Reply to email
+2 Organize desk
+1 Finish homework
+2 Buy groceries
+3 Clean bathroom
+1 Rent due
+2 Book flight tickets
+4 Watch movie
+1 Attend team meeting
+3 Prepare lunch
+4 Write blog post
+2 Plan weekend trip
+1 Get tickets to the concert
+4 Call the plumber
+3 Organize files
+2 Pay credit card bill
+4 Clean car
+1 Submit assignment
+3 Feed the dog
+2 Call mom
+1 Pick up groceries
+4 Update website
+3 Take a nap
+2 Schedule doctor appointment
+1 Clean living room
+4 Buy new shoes
+3 Fix the printer
+2 Send gift for birthday
+1 Go to the gym
+3 Mow the lawn
+2 Call client
+4 Write a letter
+1 Buy new laptop
+3 Visit friends
+2 Make dinner
+4 Read a book
+1 Water the plants
+3 Plan project milestones
+2 Visit dentist
+4 Clean kitchen
+1 Return library books
+3 Fix the dishwasher
+2 Pick up dry cleaning
+4 Send thank you notes
+1 Call bank
+2 Set up meeting
+3 Go for a walk
+4 Clean the fridge
+1 Pay rent
+3 Organize the pantry
+2 Buy new phone
+4 Reply to texts
+1 Go for a run
+3 Clean windows
+2 Write a report
+4 Review work email
+1 Meet with mentor
+3 Purchase gift for friend
+2 Plan birthday party
+4 Watch the news
+1 Take out the trash
+3 Edit video
+2 Reorganize closet
+4 Visit parents
+1 Make doctor's appointment
+3 Write presentation slides
+2 Prepare breakfast
+4 Visit museum
+1 Go to the post office
+3 Call tech support
+2 Send birthday card
+4 Check social media
+1 Write a research paper
+3 Prepare snacks
+2 Call customer service
+4 Clean out garage
+1 Check email
+3 Repair bike
+2 Order new furniture
+4 Visit friend
+1 Clean bedroom
+3 Create to-do list
+2 Buy tickets for movie
+4 Update software
+1 Respond to emails
+3 Clean garden
+2 Attend seminar
+4 Buy pet food
+1 Fix the door
+3 Paint the wall
+2 Pick up prescriptions
+4 Sort through old clothes
+1 Review meeting notes
+3 Call doctor
+2 Make an appointment
+4 Find new job
+1 Submit application

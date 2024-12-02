@@ -1,0 +1,55 @@
+problem: Working with Stacks
+suites:
+- name: Stack Operations Tests
+  pts: 16
+  tests:
+  - command:
+    - ./mysolution
+    - '0'
+    - '10'
+    - '5'
+    name: Fill Stack
+    solution: !!binary |
+      LS0tLS0tLS0tLS0tClNUQUNLIFBSSU5UCi0tLQpzdGFjayBjb250ZW50cyBbc2l6ZTogNSwgY2Fw
+      YWNpdHk6IDEwXToKMCwgMSwgMiwgMywgNAotLS0tLS0tLS0tLS0K
+    type: output
+  - command:
+    - ./mysolution
+    - '1'
+    - '5'
+    - '0'
+    name: Trigger Overflow
+    solution: !!binary ""
+    type: output
+  - command:
+    - ./mysolution
+    - '2'
+    - '5'
+    - '0'
+    name: Trigger Underflow
+    solution: !!binary ""
+    type: output
+  - command:
+    - ./mysolution
+    - '3'
+    - '10'
+    - '5'
+    name: Print Reverse Stack
+    solution: !!binary |
+      LS0tLS0tLS0tLS0tClNUQUNLIFBSSU5UCi0tLQpzdGFjayBjb250ZW50cyBbc2l6ZTogNSwgY2Fw
+      YWNpdHk6IDEwXToKNCwgMywgMiwgMSwgMAotLS0tLS0tLS0tLS0K
+    type: output
+- name: Code Quality and Comments
+  pts: 4
+  tests:
+  - command:
+    - ./mysolution
+    - '0'
+    - '10'
+    - '5'
+    files: src/problem.c
+    name: Sufficient Comments
+    regex: \/\/[^\n]*|\/\*[\s\S]*?\*\/
+    score: count
+    solution: 15
+    type: regex

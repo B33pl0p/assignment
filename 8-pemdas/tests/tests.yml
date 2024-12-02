@@ -1,0 +1,54 @@
+problem: PEMDAS Expression Evaluation
+suites:
+- name: PEMDAS Expression Tests
+  pts: 20
+  tests:
+  - command:
+    - ./mysolution
+    - 3 + 5
+    name: Simple Addition
+    solution: !!binary |
+      UmVzdWx0OiA4LjAwCg==
+    type: output
+  - command:
+    - ./mysolution
+    - 10 + 2 * 6
+    name: Multiplication Before Addition
+    solution: !!binary |
+      UmVzdWx0OiAyMi4wMAo=
+    type: output
+  - command:
+    - ./mysolution
+    - 100 * 2 + 12
+    name: Mixed Operations
+    solution: !!binary |
+      UmVzdWx0OiAyMTIuMDAK
+    type: output
+  - command:
+    - ./mysolution
+    - 100 * ( 2 + 12 )
+    name: Parentheses First
+    solution: !!binary |
+      UmVzdWx0OiAxNDAwLjAwCg==
+    type: output
+  - command:
+    - ./mysolution
+    - 100 * ( 2 + 12 ) / 14
+    name: Full PEMDAS
+    solution: !!binary |
+      UmVzdWx0OiAxMDAuMDAK
+    type: output
+  - command:
+    - ./mysolution
+    - 3 + 5 * 2
+    name: Order of Operations
+    solution: !!binary |
+      UmVzdWx0OiAxMy4wMAo=
+    type: output
+  - command:
+    - ./mysolution
+    - (1 + 2) * (3 + 4)
+    name: Nested Parentheses
+    solution: !!binary |
+      UmVzdWx0OiAyMS4wMAo=
+    type: output

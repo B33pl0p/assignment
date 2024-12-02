@@ -1,0 +1,52 @@
+problem: Tree Height
+suites:
+- name: n tests
+  pts: 8
+  tests:
+  - command:
+    - ./mysolution
+    - '7'
+    name: Simple Tree
+    solution: !!binary |
+      QmluYXJ5IFRyZWUgUHJvcGVydGllcyAoTm9kZXM9NykKICAgICAgICAgSGVpZ2h0OiAyCiBJbnRl
+      cm5hbCBOb2RlczogMwogICAgICAgICBMZWF2ZXM6IDQK
+    type: output
+  - command:
+    - ./mysolution
+    - '1'
+    name: Edge Case Tree
+    solution: !!binary |
+      QmluYXJ5IFRyZWUgUHJvcGVydGllcyAoTm9kZXM9MSkKICAgICAgICAgSGVpZ2h0OiAwCiBJbnRl
+      cm5hbCBOb2RlczogMAogICAgICAgICBMZWF2ZXM6IDEK
+    type: output
+  - command:
+    - ./mysolution
+    - '513'
+    name: Big Tree
+    solution: !!binary |
+      QmluYXJ5IFRyZWUgUHJvcGVydGllcyAoTm9kZXM9NTEzKQogICAgICAgICBIZWlnaHQ6IDkKIElu
+      dGVybmFsIE5vZGVzOiAyNTYKICAgICAgICAgTGVhdmVzOiAyNTcK
+    type: output
+  - command:
+    - ./mysolution
+    - '0'
+    name: No Tree
+    solution: -6
+    type: returncode
+  - command:
+    - ./mysolution
+    name: No Args
+    solution: -6
+    type: returncode
+- name: Comments and Smells
+  pts: 2
+  tests:
+  - command:
+    - ./mysolution
+    - '0'
+    files: src/problem.c
+    name: Number of Comments
+    regex: \/\/[^\n]*|\/\*[\s\S]*?\*\/
+    score: count
+    solution: 10
+    type: regex

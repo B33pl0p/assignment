@@ -1,0 +1,105 @@
+problem: Working with Doubly Circular Linked Lists
+suites:
+- name: DCLL Operations Tests
+  pts: 22
+  tests:
+  - command:
+    - ./mysolution
+    - '0'
+    - '5'
+    - '0'
+    name: Print Head Node
+    solution: !!binary |
+      UFBSSU5UX05PREUKCi0tLQpOT0RFIChBcm5vbGQpCiBuZXh0LT4gQXJub2xkCiBwcmV2LT4gQXJu
+      b2xkCi0tLQo=
+    type: output
+  - command:
+    - valgrind
+    - ./mysolution
+    - '0'
+    - '5'
+    - '0'
+    files: src/dcll.c
+    name: Heap Check
+    regex: \/\/[^\n]*|\/\*[\s\S]*?\*\/
+    score: count
+    solution: !!binary |
+      VG90YWwgaGVhcCB1c2FnZTogMyBhbGxvY3MsIDEgZnJlZXMsIDQsMTI3IGJ5dGVzIGFsbG9jYXRl
+      ZA==
+    type: heapcheck
+  - command:
+    - ./mysolution
+    - '1'
+    - '5'
+    - '0'
+    name: Insert Nodes
+    solution: !!binary |
+      SU5TRVJUX05PREUKCkFybm9sZC0+Qm9iLT5DYXJsb3MtPkR1eS0+RXZhCg==
+    type: output
+  - command:
+    - ./mysolution
+    - '2'
+    - '5'
+    - '0'
+    name: Find Tail Node
+    solution: !!binary |
+      RklORF9UQUlMClRhaWw6IEV2YQo=
+    type: output
+  - command:
+    - ./mysolution
+    - '3'
+    - '5'
+    - '0'
+    name: Search for Carlos
+    solution: !!binary |
+      U0VBUkNIX05PREUKV2hvIGlzIGFmdGVyIENhcmxvcz8gRHV5CkhvdyBtYW55IHR1cm5zIHVudGls
+      IGl0J3MgQ2FybG9zJ3MgdHVybj8gMgo=
+    type: output
+  - command:
+    - ./mysolution
+    - '4'
+    - '5'
+    - '10'
+    name: Turn Printing
+    solution: !!binary |
+      VFVSTl9QUklOVElORwpBcm5vbGQKQm9iCkNhcmxvcwpEdXkKRXZhCkFybm9sZApCb2IKQ2FybG9z
+      CkR1eQpFdmEK
+    type: output
+  - command:
+    - ./mysolution
+    - '5'
+    - '5'
+    - '10'
+    name: Reverse Turn Printing
+    solution: !!binary |
+      UkVWRVJTRV9UVVJOX1BSSU5USU5HCkFybm9sZApFdmEKRHV5CkNhcmxvcwpCb2IKQXJub2xkCkV2
+      YQpEdXkKQ2FybG9zCkJvYgo=
+    type: output
+- name: Code Quality and Comments
+  pts: 8
+  tests:
+  - command:
+    - ./mysolution
+    - '0'
+    - '5'
+    - '0'
+    files: src/dcll.c
+    name: Sufficient Comments
+    regex: \/\/[^\n]*|\/\*[\s\S]*?\*\/
+    score: count
+    solution: 15
+    type: regex
+  - command:
+    - valgrind
+    - ./mysolution
+    - '6'
+    - '5'
+    - '0'
+    files: src/dcll.c
+    name: Memory Leak Check
+    regex: \/\/[^\n]*|\/\*[\s\S]*?\*\/
+    score: count
+    solution: !!binary |
+      SW4gdXNlIGF0IGV4aXQ6IDAgYnl0ZXMgaW4gMCBibG9ja3MsIFRvdGFsIGhlYXAgdXNhZ2U6IDEx
+      IGFsbG9jcywgMTEgZnJlZXMsIDQsMjQyIGJ5dGVzIGFsbG9jYXRlZA==
+    type: memcheck

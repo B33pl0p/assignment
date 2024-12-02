@@ -1,0 +1,49 @@
+problem: Tree Traversal
+suites:
+- name: Tree Traversal Printouts
+  pts: 15
+  tests:
+  - command:
+    - ./mysolution
+    - '1'
+    - '7'
+    name: Simple Tree Preorder
+    solution: !!binary |
+      UFJFT1JERVI6IDAgMTAgMzAgNDAgMjAgNTAgNjAgCg==
+    type: output
+  - command:
+    - ./mysolution
+    - '2'
+    - '7'
+    name: Simple Tree Inorder
+    solution: !!binary |
+      SU5PUkRFUjogMzAgMTAgNDAgMCA1MCAyMCA2MCAK
+    type: output
+  - command:
+    - ./mysolution
+    - '3'
+    - '7'
+    name: Simple Tree Postorder
+    solution: !!binary |
+      UE9TVE9SREVSOiAzMCA0MCAxMCA1MCA2MCAyMCAwIAo=
+    type: output
+  - command:
+    - ./mysolution
+    - '4'
+    - '7'
+    name: Simple Tree Level Order
+    solution: !!binary |
+      TEVWRUxPUkRFUjogMCAxMCAyMCAzMCA0MCA1MCA2MCAK
+    type: output
+- name: Comments and Smells
+  pts: 5
+  tests:
+  - command:
+    - ./mysolution
+    - '0'
+    files: src/problem.c
+    name: Number of Comments
+    regex: \/\/[^\n]*|\/\*[\s\S]*?\*\/
+    score: count
+    solution: 15
+    type: regex

@@ -1,0 +1,51 @@
+problem: BST
+suites:
+- name: BST Implementation
+  pts: 15
+  tests:
+  - command:
+    - ./mysolution
+    - '0'
+    name: Sort the BST
+    solution: !!binary |
+      U09SVDoKNSAxMCAxMiAxNSAyMCAK
+    type: output
+  - command:
+    - ./mysolution
+    - '1'
+    - '20'
+    - '10'
+    - '30'
+    - '70'
+    - '90'
+    - '5'
+    name: Insert BST
+    solution: !!binary |
+      SU5TRVJUIEFORCBTT1JUOgo1IDEwIDIwIDMwIDcwIDkwIAo=
+    type: output
+  - command:
+    - ./mysolution
+    - '2'
+    - '20'
+    - '10'
+    - '30'
+    - '70'
+    - '90'
+    - '5'
+    - '15'
+    name: Search the BST for 15
+    solution: !!binary |
+      U0VBUkNIOgoxNSBpcyBub3QgaW4gdGhlIHRyZWUK
+    type: output
+- name: Comments and Smells
+  pts: 5
+  tests:
+  - command:
+    - ./mysolution
+    - '0'
+    files: src/btree_ll.c
+    name: Number of Comments
+    regex: \/\/[^\n]*|\/\*[\s\S]*?\*\/
+    score: count
+    solution: 15
+    type: regex

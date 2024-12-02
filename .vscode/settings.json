@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "array": "c",
+        "string": "c",
+        "string_view": "c",
+        "pprint.h": "c",
+        "list.h": "c",
+        "vector": "c",
+        "stack.h": "c"
+    }
+}
